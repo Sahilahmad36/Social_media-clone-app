@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+
+
+:root {
+  --yellow: #edb614;
+  --orange: #c07806b5;
+  --black: #1c316f;
+  --gray: rgba(19, 32, 74, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #d1c9c9;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #de8c18 0%, #fa4d1d 100%);
+  --inputColor: rgba(19, 38, 53, 0.07);
+  --photo: #0dc11f;
+  --video: #171a84;
+  --location: #ef1616;
+--shedule: #d29214;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  overflow: hidden;
+  color: var(--black);
+  background: #d2d1d1;
+  padding: 1rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(72px)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  border:none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition:all 100ms ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover{
+  cursor: pointer;
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar{
+  display: none;
 }
